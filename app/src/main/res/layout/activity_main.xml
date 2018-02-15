@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yulia.lab2.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBackground">
+
+        <EditText
+            style="@style/CalculatorEditTextTheme"
+            android:id="@+id/edit_text_var1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/CalculatorButtonTheme"
+                android:id="@+id/button_plus"
+                android:text="@string/plus"/>
+            <Button
+                style="@style/CalculatorButtonTheme"
+                android:id="@+id/button_minus"
+                android:text="@string/minus"/>
+
+            <Button
+                style="@style/CalculatorButtonTheme"
+                android:id="@+id/button_multiply"
+                android:text="@string/multiply"/>
+
+            <Button
+                style="@style/CalculatorButtonTheme"
+                android:id="@+id/button_divide"
+                android:text="@string/divide" />
+
+        </LinearLayout>
+
+        <EditText
+            style="@style/CalculatorEditTextTheme"
+            android:id="@+id/edit_text_var2"/>
+        
+        <TextView
+            style="@style/CalculatorTextViewTheme"
+            android:id="@+id/text_view_result"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
